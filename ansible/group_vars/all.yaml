@@ -297,7 +297,7 @@ images:
 
 #===============================================================================
 # docker packages
-docker_yum_repository_url: https://download.docker.com/linux/centos/
+docker_yum_repository_url: https://download.docker.com/linux/centos/7/x86_64/stable/
 docker_yum_gpg_key_url: https://download.docker.com/linux/centos/gpg
 docker_deb_repository_url: https://download.docker.com/linux/ubuntu/dists/xenial/
 docker_deb_gpg_key_url: https://download.docker.com/linux/ubuntu/dists/xenial/Release.gpg
