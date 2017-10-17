@@ -2,7 +2,7 @@
   # YUM
   - name: install docker-engine yum package
     yum:
-      name: docker-engine={{ docker_engine_yum_version }}
+      name: {{ docker_engine_yum_version }}
       state: present
     register: docker_installation_rpm
     until: docker_installation_rpm|success
