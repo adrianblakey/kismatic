@@ -2,7 +2,7 @@
   # YUM
   - name: install docker-engine yum package
     yum:
-      name: '{{ docker_engine_yum_version }}'
+      name: docker-ce={{ docker_engine_yum_version }}
       state: present
     register: docker_installation_rpm
     until: docker_installation_rpm|success
@@ -14,7 +14,7 @@
   # DEB
   - name: install docker-engine deb package
     apt:
-      name: '{{ docker_engine_apt_version }}'
+      name: docker-engine={{ docker_engine_apt_version }}
       state: present
       default_release: ubuntu-xenial
     register: docker_installation_deb
